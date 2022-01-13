@@ -1,0 +1,8 @@
+//concatenation of two strings and also use existing string to add new string to it
+let string1 = "Rajat"
+let string2 = " ChandraShehar"
+var mystring = string1+string2
+print(mystring)
+var instruction = "My name is "
+instruction += string1
+print(instruction)
