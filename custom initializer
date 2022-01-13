@@ -1,0 +1,20 @@
+//WAP use the custom initializer using the example of distances
+struct Distance {
+    var kilometer:Double
+    init(kilometer:Double) {
+        self.kilometer = kilometer
+    }
+    init(meter:Double) {
+        kilometer = (meter/1000)
+    }
+    init(centimeter:Double) {
+        kilometer = (centimeter/100000)
+    }
+}
+let totalDistance = Distance(kilometer:55060)
+let distanceInM = Distance(meter:4000)
+let distanceInCm = Distance(centimeter:200)
+
+print(totalDistance.kilometer)
+print(distanceInM.kilometer)
+print(distanceInCm.kilometer)
